@@ -1,10 +1,10 @@
-# 📌 Retail Operations Institute
+# Retail Operations Institute
 
 > A retail operations and strategy research platform featuring original frameworks, case studies, and insights on store performance, process improvement, and operational excellence.
 
 ---
 
-## 🧠 Overview
+## Overview
 
 Retail Operations Institute is a digital thought leadership platform exploring how modern retail organizations can improve performance through systems thinking, operational design, and structured execution.
 
@@ -12,7 +12,7 @@ It is designed to demonstrate executive-level thinking in retail strategy, indus
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 This platform exists to:
 
@@ -24,7 +24,7 @@ This platform exists to:
 
 ---
 
-## 🧩 Core Focus Areas
+## Core Focus Areas
 
 - Retail Systems Thinking
 - Store Planning & Design Optimization
@@ -35,7 +35,7 @@ This platform exists to:
 
 ---
 
-## 🧠 How Retail Works (Core System Model)
+## How Retail Works (Core System Model)
 
 Store Design
 ↓
@@ -53,7 +53,7 @@ Improved Store Design
 
 ---
 
-## 📊 Signature Frameworks (IP Models)
+## Signature Frameworks (IP Models)
 
 This platform develops original analytical frameworks including:
 
@@ -112,7 +112,7 @@ Each case study follows a consulting-grade format:
 
 ---
 
-## 🧠 Philosophy
+## Philosophy
 
 Great retail performance is not accidental — it is engineered.
 
@@ -126,7 +126,7 @@ Retail is a system where:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Next.js
 - React
@@ -137,14 +137,14 @@ Retail is a system where:
 
 ---
 
-## 🚀 Live Site
+##  Live Site
 
 Coming soon — deployed via Vercel
 (link here)
 
 ---
 
-## 🧭 Why This Project Exists
+##  Why This Project Exists
 
 This is not a portfolio.
 
@@ -157,14 +157,14 @@ It is a research and insight platform designed to demonstrate how I think about:
 
 ---
 
-## 📫 Contact
+##  Contact
 
 - LinkedIn: (add link)
 - Email: (sheldonmeeks59@gmail.com)
 
 ---
 
-## 🧱 GitHub Structure (Recommended)
+## GitHub Structure
 /app
 /components
 /lib
@@ -177,7 +177,7 @@ It is a research and insight platform designed to demonstrate how I think about:
 
 ---
 
-## ⭐ Key Differentiator
+## Key Differentiator
 
 This project is designed to show:
 
