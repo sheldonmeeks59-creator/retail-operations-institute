@@ -137,6 +137,36 @@ Retail is a system where:
 
 ---
 
+## Setup: Executive Headshot
+
+The homepage hero and the About page both reserve space for a professional
+headshot next to the author's name and bio. Until a real photo is added, both
+places automatically render a designed placeholder (a monogram on a navy
+field) instead of a broken image — there's no code to touch either way.
+
+**To add your photo:**
+
+1. Save your photo as `headshot.jpg` in `public/images/profile/`.
+2. Rebuild (`npm run dev` or `npm run build`) — the placeholder is replaced
+   automatically. Detection happens at build/request time by checking whether
+   the file exists, so there's no config flag to flip.
+
+**Recommended photo specs:**
+
+- **Size:** 1200×1500px or larger, portrait orientation (a 4:5 ratio matches
+  the layout's rounded-rectangle frame best)
+- **Background:** neutral — soft gray, off-white, or a simple studio backdrop
+- **Attire:** business or business-casual
+- **Lighting:** professional, even lighting with minimal harsh shadow
+- Aim for the same register as executive photography on a consulting firm's
+  leadership page — this image sits directly beside the frameworks and case
+  studies as a credibility signal, not a casual profile picture
+
+See `public/images/profile/README.md` for the same instructions inline with
+the image directory.
+
+---
+
 ##  Live Site
 
 Coming soon — deployed via Vercel

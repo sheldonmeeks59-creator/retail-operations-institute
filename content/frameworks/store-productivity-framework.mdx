@@ -1,0 +1,59 @@
+---
+title: "Store Productivity Architecture™"
+dek: "Separating labor efficiency, customer flow, and output into three distinct levers instead of one blended metric."
+category: "Store Performance System"
+publishedAt: "2026-02-16"
+updatedAt: "2026-04-08"
+status: "published"
+author: "sheldon-meeks"
+heroStat:
+  label: "Independent levers"
+  value: "3"
+coreIdea: "Sales-per-labor-hour is a blended metric that hides which of three independent levers — labor efficiency, customer flow, or output — is actually driving the result."
+diagram: |
+  ┌────────────────────────────────────────────────────────┐
+  │              STORE PRODUCTIVITY ARCHITECTURE             │
+  │                                                          │
+  │   LABOR EFFICIENCY   CUSTOMER FLOW     OUTPUT            │
+  │   (output / labor    (rate + pattern   (transactions +   │
+  │    hour, traffic-     of movement       basket value)    │
+  │    independent)       to service)                        │
+  │        │                  │                 │           │
+  │        └──────────┬───────┴────────┬────────┘           │
+  │                   ▼                ▼                    │
+  │          BLENDED METRIC (sales / labor hour)             │
+  │                                                          │
+  │   Warning: a gain in the blended metric can mask a       │
+  │   decline in one lever offset by a cut in another.        │
+  └────────────────────────────────────────────────────────┘
+relatedFrameworks:
+  - "retail-operating-pyramid"
+  - "operational-friction-index"
+kpis:
+  - "Labor efficiency — output per scheduled labor hour, isolated from traffic variation"
+  - "Customer flow rate — time from store entry to point of service, by zone"
+  - "Output per interaction — conversion rate and basket value per completed service interaction"
+failureModes:
+  - "Reporting a single blended sales-per-labor-hour figure as 'productivity' without decomposing it"
+  - "Cutting labor hours and calling the resulting metric improvement a productivity gain"
+  - "Crediting a merchandising or marketing initiative for an output gain that was actually a flow-timing artifact"
+executiveSummary: "Store Productivity Architecture decomposes the single blended 'productivity' metric most retailers report into three independent levers: labor efficiency, customer flow, and output. This prevents an initiative from claiming a productivity win by improving one lever while quietly degrading another — a substitution effect that blended metrics reward and hide. Any initiative claiming a productivity gain must state which lever it targets and its predicted effect on the other two."
+---
+
+## Explanation
+
+"Store productivity" is frequently reported as a single blended number — sales per labor hour — which hides which of three genuinely independent levers is actually driving the result.
+
+- **Labor efficiency** — output per hour of scheduled labor, independent of traffic.
+- **Customer flow** — the rate and pattern at which customers move through the store and reach the point of service.
+- **Output** — the conversion of labor and flow into completed transactions and basket value.
+
+A store can improve sales-per-labor-hour purely by cutting hours (labor efficiency lever) while customer flow and output are actually deteriorating. Blended metrics reward this substitution; the framework is designed to catch it.
+
+## Business Applications
+
+Track the three levers separately, on the same reporting cadence, and require any initiative claiming a "productivity" gain to state which lever it targets and what it predicts for the other two. An initiative that improves one lever while degrading another by more than it gains is not a productivity improvement — it is a transfer.
+
+## Related frameworks
+
+Use the [Retail Operating Pyramid](/frameworks/retail-operating-pyramid) to trace which organizational layer is responsible when one lever underperforms, and the [Operational Friction Index](/frameworks/operational-friction-index) to identify what's suppressing labor efficiency or flow at the store level.

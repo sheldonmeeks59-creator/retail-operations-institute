@@ -1,0 +1,62 @@
+---
+title: "Customer Flow Optimization System™"
+dek: "Modeling how customers actually move, decide, and purchase — as a flow to be engineered, not a preference to be surveyed."
+category: "Customer Experience Flow"
+publishedAt: "2026-04-08"
+status: "published"
+author: "sheldon-meeks"
+heroStat:
+  label: "Flow stages modeled"
+  value: "4"
+coreIdea: "Customer experience is a physical and cognitive flow with measurable stages — entry, orientation, evaluation, and commitment — and each stage has a distinct failure mode that a single satisfaction score cannot distinguish."
+diagram: |
+  ┌──────────────────────────────────────────────────────────────┐
+  │              CUSTOMER FLOW OPTIMIZATION SYSTEM                 │
+  │                                                                │
+  │   ENTRY ──▶ ORIENTATION ──▶ EVALUATION ──▶ COMMITMENT           │
+  │     │            │              │              │               │
+  │     ▼            ▼              ▼              ▼               │
+  │  Did they    Did they find   Did they      Did they           │
+  │  slow down   the category    have enough   complete the       │
+  │  and enter   they came for   info/product  transaction        │
+  │  the flow?   within 30s?     to decide?     without friction?  │
+  │                                                                │
+  │  Each stage is measured independently. A drop-off at           │
+  │  ORIENTATION is not fixed by improving COMMITMENT.              │
+  └──────────────────────────────────────────────────────────────┘
+relatedFrameworks:
+  - "operational-friction-index"
+  - "store-productivity-framework"
+kpis:
+  - "Entry conversion — share of nearby traffic that physically enters the store or department"
+  - "Orientation time — median time from entry to first purposeful stop within the target category"
+  - "Evaluation-to-commitment ratio — share of customers who engage with a product who complete a transaction"
+  - "Stage-specific drop-off rate — where in the four-stage flow abandonment concentrates"
+failureModes:
+  - "Measuring only overall conversion, which cannot distinguish an orientation problem from a commitment problem"
+  - "Redesigning checkout (commitment stage) to fix a drop-off that's actually occurring at orientation"
+  - "Treating customer experience as a satisfaction survey question instead of an observable, stage-by-stage flow"
+executiveSummary: "The Customer Flow Optimization System models the customer journey as four measurable stages rather than a single satisfaction score. Because each stage has a distinct failure mode, aggregate conversion metrics misdirect investment toward the wrong part of the store. Isolating where in the flow customers actually drop off lets a retailer fix the stage causing the loss, instead of upgrading the stage that happens to be most visible to leadership."
+---
+
+## Explanation
+
+Retailers routinely survey customer satisfaction and act on the aggregate score, but a single number cannot tell you whether the problem is that customers don't enter, can't orient, lack information to evaluate, or hit friction at commitment. The Customer Flow Optimization System treats the path to purchase as a sequence of four distinct, independently measurable stages:
+
+- **Entry** — whether nearby traffic slows down and physically enters the store or department at all.
+- **Orientation** — whether the customer finds the category or product area they came for within a reasonable window.
+- **Evaluation** — whether the customer has sufficient product information, availability, and staff support to make a decision.
+- **Commitment** — whether the customer completes the transaction without abandoning at checkout or fulfillment.
+
+Each stage has its own drop-off pattern, and — critically — its own fix. A retailer that measures only end-to-end conversion cannot tell these apart, and typically ends up investing in the most visible stage (usually commitment, i.e., checkout) regardless of where the actual loss is occurring.
+
+## Business Applications
+
+1. **Instrument each stage separately.** Use path-tracking (in-store sensors, POS timestamps, or structured observation) to measure entry rate, orientation time, evaluation duration, and commitment completion independently.
+2. **Locate the stage with the steepest drop-off.** This is where investment belongs — not wherever the loudest internal stakeholder wants attention.
+3. **Match the fix to the stage.** Entry problems are usually about storefront/signage visibility; orientation problems are layout and wayfinding; evaluation problems are staffing and information availability; commitment problems are checkout design and process friction.
+4. **Re-test the specific stage, not overall conversion.** Overall conversion is a lagging composite; it will not confirm whether the targeted fix worked.
+
+## Related frameworks
+
+Use the [Operational Friction Index](/frameworks/operational-friction-index) to quantify friction contributing to a commitment-stage drop-off, and [Store Productivity Architecture](/frameworks/store-productivity-framework) to separate whether an evaluation-stage problem is a flow issue or a labor-coverage issue.

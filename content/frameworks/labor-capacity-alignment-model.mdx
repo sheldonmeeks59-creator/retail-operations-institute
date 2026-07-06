@@ -1,0 +1,64 @@
+---
+title: "Labor-Capacity Alignment Model™"
+dek: "Staffing to the shape of demand, not to the average of it — where scheduling is engineered against demand variance, not headcount targets."
+category: "Labor Optimization System"
+publishedAt: "2026-04-08"
+status: "published"
+author: "sheldon-meeks"
+heroStat:
+  label: "Alignment variables"
+  value: "3"
+coreIdea: "Most labor models are built against average daily demand. Retail demand is not average — it is peaked and time-boxed, and a labor model built against the average will be short at every peak and over-staffed at every trough."
+diagram: |
+  ┌────────────────────────────────────────────────────────────┐
+  │              LABOR–CAPACITY ALIGNMENT MODEL                  │
+  │                                                              │
+  │   DEMAND CURVE (actual, by hour)                             │
+  │        ╱╲                    ╱╲                              │
+  │       ╱  ╲                  ╱  ╲                             │
+  │      ╱    ╲________________╱    ╲                            │
+  │                                                               │
+  │   STAFFING MODEL A (built to average) ─ ─ ─ ─ ─ ─ ─ ─ ─       │
+  │        [ under at peaks ]   [ over at troughs ]               │
+  │                                                               │
+  │   STAFFING MODEL B (built to variance)                       │
+  │        ╱╲                    ╱╲                              │
+  │       ╱  ╲__________________╱  ╲                             │
+  │                                                               │
+  │   Alignment gap = area between demand curve and staffing      │
+  │   curve. The Model's objective is to minimize this gap        │
+  │   without increasing total scheduled hours.                   │
+  └────────────────────────────────────────────────────────────┘
+relatedFrameworks:
+  - "store-productivity-framework"
+  - "retail-flywheel"
+kpis:
+  - "Peak-hour coverage ratio — scheduled labor hours during the top-quartile demand window as a share of that window's demand-weighted requirement"
+  - "Alignment gap — cumulative variance between the demand curve and the staffing curve across a trading day"
+  - "Redeployment latency — time elapsed between a demand-triggered threshold and an actual staffing adjustment"
+failureModes:
+  - "Building a labor model from average daily or weekly demand instead of the hourly demand curve"
+  - "Adding total labor hours to fix a peak-hour shortfall instead of reallocating existing hours to match the demand curve"
+  - "Giving store managers discretion to redeploy staff without a standing rule for when and how much"
+executiveSummary: "The Labor-Capacity Alignment Model replaces average-demand staffing with variance-aware staffing: labor hours are shaped to match the actual hourly demand curve, not the daily average that curve rolls up to. This closes the alignment gap — simultaneous under-staffing at peaks and over-staffing at troughs — without necessarily increasing total scheduled hours. The model's core discipline is a standing redeployment rule, not incremental headcount."
+---
+
+## Explanation
+
+Labor models are usually built from a single number: average daily demand, translated into a target headcount or a target labor-hours budget. This works only if demand is flat across the day, which it almost never is. Retail demand is peaked — concentrated in predictable windows (weekday evening commute, weekend midday, holiday periods) — and a labor model built against the average will systematically under-staff every peak and over-staff every trough.
+
+The Labor-Capacity Alignment Model treats the hourly demand curve, not the daily average, as the object to staff against. It defines an **alignment gap** — the cumulative variance between the demand curve and the staffing curve across a trading day or week — and treats minimizing that gap, without increasing total scheduled hours, as the actual optimization target.
+
+Three variables interact:
+
+1. **Demand curve shape** — how peaked and how predictable the store's hourly demand pattern is.
+2. **Staffing curve shape** — how closely scheduled labor hours track that pattern.
+3. **Redeployment latency** — how quickly labor already on the floor can shift toward the point of demand when a threshold is crossed, rather than waiting for the next scheduled shift change.
+
+## Business Applications
+
+Retailers apply this model by first plotting the actual (not assumed) hourly demand curve per store or store cluster, then comparing it against the current staffing curve to quantify the alignment gap. Where the gap is driven by schedule design (fixed shift blocks that don't match the curve), the fix is a scheduling redesign. Where the gap is driven by redeployment latency (labor exists on the floor but isn't moved to the point of demand), the fix is a standing, threshold-based redeployment rule rather than a headcount increase — this is typically the lower-cost and faster-to-implement lever, and should be exhausted before adding hours.
+
+## Related frameworks
+
+Use [Store Productivity Architecture](/frameworks/store-productivity-framework) to confirm whether an alignment gap is actually suppressing labor efficiency or customer flow, and [Retail Flywheel Dynamics](/frameworks/retail-flywheel) to check whether labor is the system's binding constraint before reallocating capital toward it.

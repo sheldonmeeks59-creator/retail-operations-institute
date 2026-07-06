@@ -1,0 +1,60 @@
+---
+title: "Retail Capital Efficiency Loop™"
+dek: "Testing capital allocation decisions against the system's binding constraint before testing them against ROI alone."
+category: "Capital Allocation Framework"
+publishedAt: "2026-04-08"
+status: "published"
+author: "sheldon-meeks"
+heroStat:
+  label: "Gate conditions"
+  value: "3"
+coreIdea: "A capital project can clear a standard ROI hurdle and still be a poor allocation decision if it does not target the system's current binding constraint — ROI alone cannot distinguish a project that compounds from one that doesn't."
+diagram: |
+  ┌──────────────────────────────────────────────────────────────┐
+  │                RETAIL CAPITAL EFFICIENCY LOOP                   │
+  │                                                                │
+  │   PROPOSED CAPITAL PROJECT                                    │
+  │            │                                                  │
+  │            ▼                                                  │
+  │   GATE 1 — Does it target the current binding constraint?      │
+  │            │  NO ──▶ REJECT or DEFER, regardless of ROI        │
+  │            ▼ YES                                               │
+  │   GATE 2 — Standard ROI / payback threshold met?                │
+  │            │  NO ──▶ REJECT                                    │
+  │            ▼ YES                                               │
+  │   GATE 3 — Does projected gain re-enter the loop as capacity    │
+  │            for the NEXT constraint, or does it dead-end?        │
+  │            │  DEAD-ENDS ──▶ FUND AS MAINTENANCE, not GROWTH     │
+  │            ▼ COMPOUNDS                                         │
+  │        FUND AS STRATEGIC CAPITAL                                │
+  └──────────────────────────────────────────────────────────────┘
+relatedFrameworks:
+  - "retail-flywheel"
+  - "retail-value-creation-matrix"
+kpis:
+  - "Constraint-alignment rate — share of approved capital projects that target the identified binding constraint at time of approval"
+  - "Compounding yield — realized improvement in the next-stage metric per dollar of capital deployed, measured post-implementation"
+  - "Dead-end capital ratio — share of capital spend that improved a metric with no measurable downstream effect on the next stage"
+failureModes:
+  - "Approving capital based on ROI alone, without testing whether the project targets the actual binding constraint"
+  - "Funding a project that produces an isolated, one-time metric improvement and classifying it as strategic capital rather than maintenance capital"
+  - "Allowing organizational visibility or internal sponsorship strength to substitute for constraint-alignment analysis"
+executiveSummary: "The Retail Capital Efficiency Loop adds two gates to standard capital allocation beyond ROI: whether a project targets the system's current binding constraint, and whether its projected gain compounds into the next stage of the operating loop or dead-ends. Projects that clear an ROI hurdle but fail either gate are frequently well-intentioned, well-modeled, and still poor allocations — because ROI measures the project in isolation, not its effect on the system it's meant to improve."
+---
+
+## Explanation
+
+Standard capital allocation processes test a proposed project against ROI, payback period, or IRR — financial hurdles that evaluate the project in isolation. The Retail Capital Efficiency Loop argues this is necessary but not sufficient: a project can clear every financial hurdle and still be a poor allocation if it does not target where the operating system is actually constrained, or if its gain does not re-enter the system as capacity for the next constraint.
+
+The framework adds two gates ahead of the standard financial test:
+
+- **Constraint alignment** — does this project address the stage of the operating loop (per [Retail Flywheel Dynamics](/frameworks/retail-flywheel)) currently limiting overall performance? A project that improves a non-constrained stage will not move system-level results regardless of its individual ROI.
+- **Compounding vs. dead-end** — does the projected gain feed back into the loop as increased capacity at the next stage, or does it terminate as a one-time, isolated improvement? A dead-end project may still be worth funding, but as maintenance capital, not strategic capital — the distinction matters for how it should be prioritized against other demands on the capital budget.
+
+## Business Applications
+
+Capital committees apply the Loop by requiring every proposal above a materiality threshold to state, before ROI is even reviewed: (1) which stage of the operating loop it targets, and whether that stage is the current binding constraint; and (2) whether the projected gain is expected to compound into the next stage or dead-end. Projects that fail the constraint-alignment gate are deferred regardless of ROI attractiveness, since capital deployed against a non-constrained stage produces no system-level return even when the project-level return looks strong. This reframes the capital committee's job from "which projects have the best ROI" to "which projects move the system" — a materially different filter.
+
+## Related frameworks
+
+Use [Retail Flywheel Dynamics](/frameworks/retail-flywheel) to identify the current binding constraint before a project reaches the capital committee, and the [Retail Value Creation Matrix](/frameworks/retail-value-creation-matrix) to sequence multiple constraint-aligned projects against each other by cost and impact.

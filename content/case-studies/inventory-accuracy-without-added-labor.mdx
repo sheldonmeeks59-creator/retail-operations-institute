@@ -1,0 +1,164 @@
+---
+title: "Improving Inventory Accuracy Without Increasing Labor Hours"
+dek: "An illustrative engagement raising cycle-count accuracy at a pharmacy and convenience chain by redesigning when counts happen, not how many labor hours are spent on them."
+industry: "Pharmacy & Convenience"
+category: "Improving Inventory Accuracy Without Increasing Labor Hours"
+tags: ["inventory accuracy", "cycle counting", "labor efficiency"]
+engagementType: "Illustrative case study"
+publishedAt: "2026-04-19"
+status: "published"
+author: "sheldon-meeks"
+seoTitle: "Improving Inventory Accuracy Without Added Labor | Case Study"
+seoDescription: "An illustrative case study applying the Operational Friction Index and Labor-Capacity Alignment Model to inventory accuracy without increasing labor hours."
+ogDescription: "More counting hours weren't available. The fix was counting at the right time instead."
+heroImageConcept: "Photograph of a stockroom associate scanning a shelf with a handheld device during a quiet, non-peak period."
+kpiImpact:
+  - label: "Inventory record accuracy"
+    value: "+11.2 pts"
+    delta: "improved"
+  - label: "Cycle-count labor hours"
+    value: "unchanged"
+    delta: "flat"
+  - label: "Out-of-stock rate on counted SKUs"
+    value: "-28%"
+    delta: "improved"
+relatedFrameworks:
+  - "operational-friction-index"
+  - "labor-capacity-alignment-model"
+stakeholders:
+  - role: "VP of Supply Chain"
+    interest: "Restore inventory accuracy without new labor budget"
+    influence: "High"
+  - role: "Store Operations"
+    interest: "Avoid disrupting customer-facing coverage during counting windows"
+    influence: "High"
+  - role: "Finance"
+    interest: "Reduce shrink estimation risk tied to inaccurate records"
+    influence: "Medium"
+  - role: "Store Associates"
+    interest: "Complete counts without being pulled off mid-task repeatedly"
+    influence: "Medium"
+decisionMatrix:
+  - option: "Request additional dedicated counting labor"
+    cost: "High"
+    impact: "Medium"
+    timeToValue: "Not currently fundable"
+  - option: "Reschedule existing counting hours to low-traffic windows"
+    cost: "Low"
+    impact: "High"
+    timeToValue: "30 days"
+    recommended: true
+  - option: "Retrain associates on counting procedure"
+    cost: "Medium"
+    impact: "Low"
+    timeToValue: "60 days"
+roadmap:
+  quickWins:
+    - "Identify low-traffic windows per store using existing hourly POS data"
+    - "Move a pilot group of 20 stores' counting schedules into those windows"
+  mediumTerm:
+    - "Roll the rescheduled counting window out chain-wide"
+    - "Establish a standing rule protecting the counting window from reassignment to floor coverage"
+  longTerm:
+    - "Extend interruption-aware scheduling to other interruption-sensitive tasks (e.g., receiving, planogram resets)"
+    - "Build count-interruption rate into the standing supply chain operating review"
+risks:
+  - risk: "Low-traffic windows are reclaimed for other tasks under staffing pressure"
+    mitigation: "Encode the counting-window protection as a scheduling system rule, not a manager guideline"
+  - risk: "Some stores' low-traffic windows are too short to complete a full count"
+    mitigation: "Segment counts into smaller batches sized to each store's actual low-traffic window"
+reflectionQuestions:
+  - "When a metric is underperforming, are we defaulting to 'we need more labor' before testing whether existing labor is simply scheduled at the wrong time?"
+  - "Do we track task interruption as a distinct cause of error, or only the resulting error rate?"
+  - "Which of our interruption-sensitive tasks are currently scheduled during our highest-traffic hours by default rather than by design?"
+---
+
+## Executive Summary
+
+A pharmacy and convenience chain had inventory record accuracy well below its 95% target, and leadership's proposed fix was additional dedicated counting labor. Budget for that labor was not available. Analysis found that existing counting hours were being scheduled during peak customer traffic, when counts were most frequently interrupted and least reliable — rescheduling the same hours to low-traffic windows closed most of the accuracy gap at no incremental cost.
+
+## Business Context
+
+Inventory record accuracy directly affects both out-of-stock rates and shrink estimation, and the chain's finance function had flagged declining accuracy as a growing risk to both metrics heading into the next planning cycle.
+
+## Industry Background
+
+Pharmacy and convenience formats carry high SKU velocity in a compact footprint, which makes counting accuracy more sensitive to interruption than in larger-format retail, where a count in progress is less likely to intersect with customer traffic.
+
+## The Business Challenge
+
+Inventory record accuracy had declined to 84% against a 95% target, and the proposed remedy — additional counting labor — was not fundable in the current budget cycle, leaving the metric without an approved path to improvement.
+
+## Current State Analysis
+
+- Cycle counts were scheduled during standard daytime shifts, which overlapped with the store's highest customer-traffic hours.
+- Associates conducting counts were frequently interrupted to assist customers, restarting or abandoning counts in progress.
+- No data existed on interruption rate as a distinct cause of count error, separate from counting errors themselves.
+
+## Stakeholder Analysis
+
+Supply chain leadership, store operations, finance, and the associates performing the counts each had a distinct stake in the outcome — see the Stakeholder Map exhibit below.
+
+## Root Cause Analysis
+
+Scoring counting-related friction using the Operational Friction Index found that interruption-driven labor friction, not associate error rate, was the dominant contributor to inaccurate counts. Associates who completed a count without interruption were accurate at a rate more than 20 points higher than those interrupted mid-count. Counts were being scheduled during the exact hours the Labor-Capacity Alignment Model would identify as peak customer-demand windows — the least defensible time to schedule an interruption-sensitive task.
+
+## Key Operational Constraints
+
+- Counting had historically been scheduled during standard daytime shifts by default, not deliberately against a low-traffic window.
+- Store labor budgets did not distinguish counting-task hours from general floor-coverage hours in scheduling.
+- No standing rule existed prohibiting counting tasks during top-quartile demand hours.
+
+## Strategic Objectives
+
+- Improve inventory record accuracy toward the 95% target without new labor budget.
+- Reduce count interruption rate as the primary lever, ahead of retraining or added labor.
+- Establish scheduling rules that protect counting windows going forward.
+
+## Data Considerations
+
+Point-of-sale hourly traffic data and workforce scheduling data existed independently but had not previously been cross-referenced against count-completion logs to identify interruption patterns — assembling this view required joining three data sources at the shift level for the first time.
+
+## Illustrative Baseline Metrics
+
+| Metric | Baseline | Illustrative Target |
+| --- | --- | --- |
+| Inventory record accuracy | 84% | 95%+ |
+| Count interruption rate | Elevated, previously uninstrumented | Reduced and tracked |
+| Cycle-count labor hours | Baseline (100%) | Unchanged |
+
+## Frameworks Applied
+
+The [Operational Friction Index](/frameworks/operational-friction-index) was used to isolate interruption-driven labor friction as the dominant cause of count inaccuracy. The [Labor-Capacity Alignment Model](/frameworks/labor-capacity-alignment-model) was used to identify low-traffic windows suitable for rescheduling counting tasks without displacing customer-facing coverage.
+
+## Alternative Strategic Options
+
+Additional counting labor, rescheduling to low-traffic windows, and associate retraining were each scored by cost, impact, and time to value — see the Decision Matrix exhibit below. Additional labor was the most direct fix but was not fundable and, per the root-cause analysis, would not have addressed interruption as the primary driver in any case. Retraining assumes an associate-skill problem, which the data did not support. Rescheduling existing hours to low-traffic windows directly targets the confirmed root cause at no incremental labor cost.
+
+## Recommended Strategy
+
+Reschedule cycle counts into identified low-traffic windows using existing labor hours, and establish a standing rule reserving those windows exclusively for counting tasks rather than general floor coverage.
+
+## Implementation Roadmap
+
+The rollout is sequenced across three phases — see the Implementation Timeline exhibit below.
+
+## Illustrative KPI Dashboard
+
+See the dashboard above: inventory record accuracy, cycle-count labor hours, and out-of-stock rate on counted SKUs are tracked together to confirm the accuracy gain did not require incremental labor.
+
+## Expected Business Outcomes
+
+Modeled outcomes are illustrative. Rescheduling counting windows is expected to close the majority of the accuracy gap within one to two quarters as interruption rates decline, without requiring incremental labor budget.
+
+## Potential Risks
+
+The primary risks and mitigations are summarized in the Risk Register exhibit below.
+
+## Executive Takeaways
+
+The accuracy problem was framed internally as a labor-quantity problem. It was actually a labor-timing problem, and the fix cost nothing incremental once correctly diagnosed.
+
+## Lessons Learned
+
+No one had previously separated "count was wrong" from "count was interrupted" as distinct failure modes — the two had been tracked as a single undifferentiated accuracy metric.
