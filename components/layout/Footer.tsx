@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { footerNav } from "@/lib/nav";
+import { profile } from "@/lib/profile";
 
 export function Footer() {
   return (
@@ -14,6 +15,9 @@ export function Footer() {
             <p className="mt-3 text-sm text-paper/70">
               Original frameworks, case studies, and executive insights on
               retail systems, store operations, and operational excellence.
+            </p>
+            <p className="mt-3 text-sm text-paper/50">
+              Founded by {profile.name} · {profile.location}
             </p>
           </div>
 
