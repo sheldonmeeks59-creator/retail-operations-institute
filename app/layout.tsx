@@ -56,6 +56,17 @@ const organizationJsonLd = {
   name: SITE_NAME,
   url: SITE_URL,
   description: SITE_DESCRIPTION,
+  founder: {
+    "@type": "Person",
+    name: "Sheldon Meeks",
+    url: `${SITE_URL}/about`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Atlanta",
+      addressRegion: "Georgia",
+      addressCountry: "US",
+    },
+  },
   sameAs: [],
 };
 
