@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
+import { FlywheelLoopMotif } from "@/components/decor/FlywheelLoopMotif";
 
 export function CTASection({
   eyebrow = "Work with the Institute",
@@ -15,8 +16,9 @@ export function CTASection({
   ctaHref?: string;
 }) {
   return (
-    <section className="bg-navy-950 py-20 text-paper">
-      <Container size="content" className="text-center">
+    <section className="relative overflow-hidden bg-navy-950 py-20 text-paper">
+      <FlywheelLoopMotif className="right-0 top-1/2 h-[600px] w-[600px] -translate-y-1/2 translate-x-1/4" />
+      <Container size="content" className="relative z-10 text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-500">
           {eyebrow}
         </p>
