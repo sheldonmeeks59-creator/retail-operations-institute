@@ -9,6 +9,8 @@ import { ProfileHeadshot } from "@/components/profile/ProfileHeadshot";
 import { FadeInUp } from "@/components/motion/FadeInUp";
 import { getAllFrameworks, getAllInsights, getAllCaseStudies } from "@/lib/content";
 import { hasHeadshot } from "@/lib/headshot";
+import { DotGrid } from "@/components/decor/DotGrid";
+import { GradientGlow } from "@/components/decor/GradientGlow";
 
 export default function Home() {
   const frameworks = getAllFrameworks().slice(0, 3);
@@ -18,8 +20,19 @@ export default function Home() {
 
   return (
     <>
-      <section className="border-b border-line bg-paper py-24">
-        <Container size="wide">
+      <section className="relative overflow-hidden border-b border-line bg-paper py-24">
+        <DotGrid className="opacity-70" />
+        <GradientGlow
+          className="right-[-120px] top-[-80px] hidden lg:block"
+          color="#b5893a"
+          size={520}
+        />
+        <GradientGlow
+          className="bottom-[-140px] left-[-160px] hidden lg:block"
+          color="#2a5296"
+          size={420}
+        />
+        <Container size="wide" className="relative z-10">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
             <FadeInUp>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-600">
