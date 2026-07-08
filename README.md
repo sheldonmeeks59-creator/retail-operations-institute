@@ -169,8 +169,7 @@ the image directory.
 
 ##  Live Site
 
-Coming soon — deployed via Vercel
-(link here)
+sheldonmeeks.com
 
 ---
 
